@@ -11,7 +11,7 @@ app.engine("handlebars", hbs({ defaultLayout: "layout" }));
 app.use(express.static("static"));
 
 app.get("/", function(req, res) {
-  res.render("form");
+  res.render("index");
 });
 
 app.post("/app", (req, res) => {
